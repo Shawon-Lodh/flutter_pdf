@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:typed_data';
 
+import 'package:flutter_pdf/examples/personal_resume.dart';
 import 'package:pdf/pdf.dart';
 
 import 'data.dart';
@@ -18,7 +19,7 @@ const examples = <Example>[
   Example('REPORT', 'report.dart', generateReport),
   Example('CALENDAR', 'calendar.dart', generateCalendar),
   Example('CERTIFICATE', 'certificate.dart', generateCertificate, true),
-  Example('CERTIFICATE', 'certificate.dart', generateCertificate, true),
+  Example('Personal', 'personal_resume.dart', personalResume),
 ];
 
 typedef LayoutCallbackWithData = Future<Uint8List> Function(
